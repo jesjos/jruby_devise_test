@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
-# Use jdbcsqlite3 as the database for Active Record
-gem 'activerecord-jdbcsqlite3-adapter'
 # Use Puma as the app server
 gem 'puma'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -20,3 +18,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4'
+
+gem 'activerecord-jdbc-adapter', github: 'jensnockert/activerecord-jdbc-adapter', branch: 'activerecord-50'
+gem 'activerecord-jdbcsqlite3-adapter', github: 'jensnockert/activerecord-jdbc-adapter', branch: 'activerecord-50'
+
